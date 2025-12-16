@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Deku Tree Deep Dive – A Visual Dungeon Tutorial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A step-by-step, image-driven tutorial for clearing the Great Deku Tree dungeon, built from original maps and screenshots.">
+  <meta name="keywords" content="Zelda, Ocarina of Time, Great Deku Tree, dungeon guide, visual tutorial">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans">
+  <header class="border-b border-teal-400/40 bg-slate-900/80 backdrop-blur sticky top-0 z-20">
+    <div class="container mx-auto flex items-center justify-between px-4 py-3">
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="pixel-border px-3 py-1 text-sm tracking-wide uppercase text-teal-300">Dungeon Lab</span>
+      </a>
+      <nav class="flex gap-4 text-sm md:text-base">
+        <a href="index.html" class="nav-link nav-link-active">Overview</a>
+        <a href="route.html" class="nav-link">Step-By-Step Route</a>
+        <a href="gallery.html" class="nav-link">Map & Image Library</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-8 space-y-16">
+    <!-- Hero -->
+    <section class="grid gap-10 md:grid-cols-2 items-center">
+      <div>
+        <h1 class="text-3xl md:text-4xl font-extrabold mb-4 leading-tight">
+          Deku Tree Deep Dive<br>
+          <span class="text-teal-300">A Visual Dungeon Tutorial</span>
+        </h1>
+        <p class="mb-3">
+  This site is a personal hobby project: a laboratory for studying level design
+  through the Great Deku Tree dungeon. Instead of being “just another fan page,”
+  it presents a structured case study using screenshots taken in-engine along
+  with map renders sourced from the Gigaleak / Ship of Harkinian texture pack.
+</p>
+<p class="mb-3">
+  The goal is to explore how the dungeon teaches movement, combat, and puzzle
+  skills. By pairing the gameplay images with annotated notes, this guide becomes
+  both a tutorial for new players and a miniature design analysis.
+</p>
+<p class="mb-3">
+  The map images are not my own renders — they originate from the publicly
+  available Gigaleak / Ship of Harkinian texture pack — but the walkthrough
+  structure, commentary, sequencing, and tutorial format are entirely original.
+</p>
+<p class="mb-6">
+  This project also serves as practice for modern web design: Tailwind CSS,
+  layout grids, semantic HTML, and GitHub Pages hosting.
+</p>
+
+
+        <div class="flex flex-wrap gap-3">
+          <a href="route.html" class="btn-primary">
+            Start the Tutorial
+          </a>
+          <a href="gallery.html" class="btn-ghost">
+            Browse All Maps & Images
+          </a>
+        </div>
+      </div>
+
+      <figure class="relative">
+        <img src="images/dekutree.png" alt="Link standing outside the Great Deku Tree" class="w-full rounded-3xl shadow-xl shadow-teal-500/20 object-cover">
+        <figcaption class="mt-2 text-xs text-slate-300">
+          Entrance shot – the starting point for the entire guide.
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- Three-column grid: About, How to Use, Links -->
+    <section class="grid gap-8 md:grid-cols-3">
+      <article class="card">
+        <h2 class="card-title">What This Site Covers</h2>
+        <p>
+          The focus is <strong>only</strong> the Great Deku Tree dungeon. No generic walkthrough,
+          no full-game spoilers. Just one dungeon explored in depth: room order, items,
+          Gold Skulltulas, secrets, and the Queen Gohma fight.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2 class="card-title">How to Use the Guide</h2>
+        <p>
+          The <em>Step-By-Step Route</em> page walks you through each floor using a mix of
+          text and annotated screenshots. Blue-green map rooms show where you are; inline
+          photos show what you should be seeing in-game if you are on track.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2 class="card-title">External Resources</h2>
+        <p class="mb-2">
+          For deeper lore or speed-running tech, you may also want to check:
+        </p>
+        <ul class="list-disc list-inside space-y-1 text-sm">
+          <li><a class="text-teal-300 hover:underline" href="https://www.zeldadungeon.net/" target="_blank" rel="noopener">Zelda Dungeon – general walkthroughs</a></li>
+          <li><a class="text-teal-300 hover:underline" href="https://www.speedrun.com/oot" target="_blank" rel="noopener">speedrun.com – Ocarina of Time runs</a></li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Design breakdown teaser -->
+    <section class="grid gap-10 md:grid-cols-2 items-center">
+      <figure>
+        <img src="images/gdtf1.png" alt="Custom first floor map of the Deku Tree" class="w-full rounded-3xl shadow-xl shadow-emerald-400/20 object-contain bg-slate-900/70 p-4">
+        <figcaption class="mt-2 text-xs text-slate-300">
+          Custom floor 1 map – made for ship of Harkinian as part of a remastered texture pack.
+        </figcaption>
+      </figure>
+      <article>
+        <h2 class="card-title">Why the Deku Tree Works as a Tutorial Dungeon</h2>
+        <p class="mb-3">
+          The Great Deku Tree is secretly a lesson plan. Its first rooms gently introduce
+          vertical space, moving platforms, basic combat, and puzzle elements like torches
+          and switches. Later, the dungeon asks you to combine those ideas under a timer
+          or while avoiding damage.
+        </p>
+        <p class="mb-3">
+          By freezing each moment with screenshots and custom maps, we can see how the
+          designers nudge you along without heavy text. This site highlights those patterns
+          so that you can learn both how to beat the dungeon and how to think about building
+          levels of your own.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="mt-16 border-t border-slate-800 bg-slate-900/80">
+    <div class="container mx-auto px-4 py-6 text-xs md:text-sm flex flex-col md:flex-row items-center justify-between gap-3">
+      <p>&copy; <span id="year"></span> Deku Tree Deep Dive – a personal web design project.</p>
+      <p class="text-slate-400">
+        Built with semantic HTML, Tailwind CSS, and hosted on GitHub Pages.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Tiny helper to keep the footer year up to date
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Deku Tree – Image Library</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <h1>Deku Tree Deep Dive</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="route.html">Route</a>
+      <a class="nav-active" href="gallery.html">Gallery</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <h2>Full Image Library</h2>
+  <p>Every screenshot and map used in this tutorial is collected here.</p>
+
+  <div class="grid-3">
+
+    <!-- example, you will add the entire list -->
+    <figure class="image-card">
+      <img src="images/dekutree.png" alt="Entrance of the Great Deku Tree">
+      <figcaption>Outside the Great Deku Tree</figcaption>
+    </figure>
+
+    <figure class="image-card">
+      <img src="images/insidethegreatdekutree.png" alt="Inside first chamber">
+      <figcaption>First chamber</figcaption>
+    </figure>
+
+    <!-- Continue adding all images in order you listed -->
+
+  </div>
+</div>
+
+<footer>
+  © <span id="year"></span> Deku Tree Deep Dive
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
